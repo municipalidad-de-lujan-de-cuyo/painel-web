@@ -382,20 +382,20 @@
   function load (ctx, isInit) {
     ctx.config = JSON.parse(JSON.stringify(ctx.$store.state.config))
     // defaults
-    ctx.config.locale = ctx.config.locale || 'en'
+    ctx.config.locale = ctx.config.locale || 'es'
     ctx.config.services = ctx.config.services || []
     ctx.config.alert = ctx.config.alert || audio.alertsAvailable.Default
 
     ctx.config.pageBgColorNormal = ctx.config.pageBgColorNormal || '#FFFFFF'
-    ctx.config.pageFontColorNormal = ctx.config.pageFontColorNormal || '#000000'
+    ctx.config.pageFontColorNormal = ctx.config.pageFontColorNormal || '#4E4C4E'
     ctx.config.pageBgColorPriority = ctx.config.pageBgColorPriority || '#FFFFFF'
-    ctx.config.pageFontColorPriority = ctx.config.pageFontColorPriority || '#FF0000'
-    ctx.config.sidebarBgColor = ctx.config.sidebarBgColor || '#4FC08D'
-    ctx.config.sidebarFontColor = ctx.config.sidebarFontColor || '#000000'
+    ctx.config.pageFontColorPriority = ctx.config.pageFontColorPriority || '#DD4B39'
+    ctx.config.sidebarBgColor = ctx.config.sidebarBgColor || '#4E4C4E'
+    ctx.config.sidebarFontColor = ctx.config.sidebarFontColor || '#FFD318'
     ctx.config.footerBgColor = ctx.config.footerBgColor || '#F1F1F1'
-    ctx.config.footerFontColor = ctx.config.footerFontColor || '#000000'
-    ctx.config.clockBgColor = ctx.config.clockBgColor || '#44A075'
-    ctx.config.clockFontColor = ctx.config.clockFontColor || '#000000'
+    ctx.config.footerFontColor = ctx.config.footerFontColor || '#4E4C4E'
+    ctx.config.clockBgColor = ctx.config.clockBgColor || '#403f40'
+    ctx.config.clockFontColor = ctx.config.clockFontColor || '#FFD318'
 
     if (ctx.$store.getters.isAuthenticated) {
       const forceLoad = (
