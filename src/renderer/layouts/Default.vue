@@ -91,9 +91,9 @@
 
   .featured-column
       header
-        height: 80vh
+        height: 85vh
       footer
-        height: 20vh
+        height: 15vh
         padding: 5vh
         img
           height: 10vh
@@ -110,10 +110,10 @@
   .history-column
     height: 100vh
     header
-      height: 80vh
+      height: 85vh
       padding: 1rem 0
     footer
-      height: 20vh
+      height: 15vh
       padding: 1rem 0
       text-align: center
       background: rgba(0,0,0,.1)
